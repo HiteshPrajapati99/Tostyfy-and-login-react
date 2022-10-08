@@ -39,7 +39,7 @@ export default function Loginpage() {
             navigate("/");
           }, 1700);
         } else {
-          toast.promise(res.data.message, {
+          toast.error(res.data.message, {
             position: "top-center",
             autoClose: 3000,
             hideProgressBar: false,

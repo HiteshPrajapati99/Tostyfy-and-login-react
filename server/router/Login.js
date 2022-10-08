@@ -13,7 +13,7 @@ router.post("/login", function (req, res) {
         if (!user) {
           res.json({
             success: false,
-            message: "email and password not provided !!!",
+            message: "Email and password not provided !!!",
           });
         } else if (user) {
           if (!req.body.password) {
@@ -23,7 +23,7 @@ router.post("/login", function (req, res) {
             if (!validPassword) {
               res.json({
                 success: false,
-                message: "Could not authenticate password",
+                message: "Email and password are wrong",
               });
             } else {
               //res.send(user);

@@ -51,7 +51,7 @@ export default function Paginationdata() {
         <div style={{ float: "right" }}>
           <Stack spacing={1}>
             <Pagination
-              count={5}
+              count={10}
               showFirstButton={true}
               color={"primary"}
               onChange={(event, value) => {
